@@ -1,9 +1,12 @@
-import Image from "next/image";
+import Link from "next/link";
+import UserCard from "./components/UserCard";
 
 export default function Home() {
   return (
     <div className="">
-  <h4>Hello world</h4>
+    <Link href="/users" >Users Page</Link>
+    <Link href="/users/user" >New User Page</Link>
+    <UserCard/>
     </div>
   );
 }
